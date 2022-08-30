@@ -1,0 +1,249 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+}
+/* TODO: REMOVE SETTINGS FROM MBOILE VIEW */
+/* TOP BAR STYLES */
+
+.time, .day{
+    display: none;
+}
+
+.icons .time{
+  display: none;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 6px 10px 6px;
+    /* border-bottom: 1px solid gray; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: gainsboro;
+}
+
+.number{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  font-size: small;
+  background-color:  #d63031;
+  color:white;
+  text-align: center;
+  border:2px solid;
+  position: absolute;
+  top:3px;
+  right: 27px;
+}
+
+.number:empty{
+  display: none;
+}
+
+
+/* --- BOTTOM BAR STYLES--- */
+
+.bottom-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    position: fixed;
+    inset: auto 0px 0px 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    z-index: 999;
+    background-color: white;
+  }
+
+  .bottom-bar > *{
+    text-decoration: none;
+  }
+
+  .card-container{
+    padding-top: 20px;
+    margin: 50px 5px 0px 5px;
+    display: flex;
+    background-color: gainsboro;
+}
+
+  .text, .logout{
+    display: none;
+  }
+
+  .bar-logo{
+    display: none;
+  }
+
+  .material-icons{
+    color: gray;
+  }
+
+  .selected{
+    color: black;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column-reverse;
+    font: 11px sans-serif;
+    align-items: center;
+    color:black
+  }
+
+  @media only screen and (min-width: 800px) {
+    .top-bar{
+        display: fixed;
+        left:20%;
+        top:0px;
+        right:0px;
+        background-color: white;
+        border-bottom: 1px solid black;
+    }
+
+    .card-container{
+      display: grid;
+      margin-top: 49px;
+      margin-left: 20.5%;
+      margin-right: 5px;
+  }
+
+  .bottom-bar > *{
+    text-decoration: none;
+  }
+    .icons{
+      display: flex;
+      font-size: 13px;
+    }
+    /* TODO: REMOVE heading and fix parent container alignment
+        currently set to white to hide for testing */
+    .heading{
+        color: white;
+    }
+
+    .icons .time{
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    .icons .day{
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+
+    #back-arrow{
+      display: none;
+    }
+
+    #more{
+      display: none;
+    }
+
+    .bottom-bar{
+    display: flex;
+    background-color: rgb(14, 21, 8);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    left: 0px;
+    right: 80%;
+    padding: 20px 0px 20px 5px;
+    z-index: 999;
+    }
+    
+    .text{
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-left: 20px;
+      color:gray;
+      font-size: 1em;
+    }
+
+    .material-icons{
+      padding-right: 10px;
+      color:gray;
+    }
+
+    .selected{
+      color:rgb(107, 107, 243);
+      border-left: 2px solid rgb(107, 107, 243);
+      
+    }
+
+    .text:hover{
+      border-left: 2px solid rgb(107, 107, 243);
+
+    }
+
+    .bar-logo{
+      display: inline;
+      width: 70%;
+      padding-bottom: 30px;
+      padding-left: 20px
+    }
+
+
+
+    .logout{
+      position: absolute;
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      bottom:30px;
+      left:30px;
+      color:gray;
+    }
+    .logout:hover, .logout:hover > span{
+      color: rgb(107, 107, 243);
+    }
+    
+  }
+
+
+
+  
+
+
+
+ 
