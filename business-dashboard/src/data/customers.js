@@ -8,7 +8,8 @@ let customers=[
         zip: "15126",
         phone: "4122225134",
         email: "gmurin@email.com",
-        anniversary_date: new Date('December 11, 2016, 12:00:00')
+        anniversary_date: new Date('December 11, 2016, 12:00:00'),
+       
     },
     {
         id:'002',

@@ -8,10 +8,13 @@ export default function CustomerView(){
     return(<>
         {customers && customers.map((customer, key)=>{
             return(
-            <div>
-                <h1>{customer.name}</h1>
-                <h4>Customer Since {customer.anniversary_date.getFullYear()}</h4>
-                <button onClick={()=>{navigate("/customers/" + customer.id)}}>More Details</button>
+            <div className="details-container">
+                <img className='cv-profile-pic' src="https://unsplash.it//200/200" alt="" />
+                <div className='details-bar'>
+                    <div>{customer.name}</div>
+                    <div>Customer Since {customer.anniversary_date.getFullYear()}</div>
+                    <button onClick={()=>{navigate("/customers/" + customer.id)}}>More Details</button>
+                </div>
             </div>
         )})}
     </>)

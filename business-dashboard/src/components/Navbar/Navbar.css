@@ -48,7 +48,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background-color: gainsboro;
+
 }
 
 .number{
@@ -92,10 +92,9 @@ body{
   }
 
   .card-container{
-    padding-top: 20px;
     margin: 50px 5px 0px 5px;
     display: flex;
-    background-color: gainsboro;
+  
 }
 
   .text, .logout{
