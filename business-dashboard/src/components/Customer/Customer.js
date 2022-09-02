@@ -10,7 +10,7 @@ export default function Customer(){
     return(<>
         <div className="hero">
         <img className="hero-img" src="https://unsplash.it//800/200" alt="background"></img>
-        <img className="profile-pic" src={require("./profile.png")} alt="profile pic"></img>
+        <img className="profile-pic" src={customer.img} alt="profile pic"></img>
     </div>
 
     <div className="content">

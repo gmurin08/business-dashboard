@@ -9,7 +9,7 @@ export default function CustomerView(){
         {customers && customers.map((customer, key)=>{
             return(
             <div className="details-container">
-                <img className='cv-profile-pic' src="https://unsplash.it//200/200" alt="" />
+                <img className='cv-profile-pic' src={customer.img} alt="" />
                 <div className='details-bar'>
                     <div>{customer.name}</div>
                     <div>Customer Since {customer.anniversary_date.getFullYear()}</div>

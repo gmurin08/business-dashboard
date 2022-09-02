@@ -1,15 +1,15 @@
 let customers=[
     {
         id:'001',
-        name: 'Gino Murin',
+        name: 'Brian Stevens',
         street: "416 Ninth Ave",
         city: "Imperial", 
         state: "PA",
         zip: "15126",
         phone: "4122225134",
-        email: "gmurin@email.com",
+        email: "brian@email.com",
         anniversary_date: new Date('December 11, 2016, 12:00:00'),
-       
+        img: 'https://randomuser.me/api/portraits/thumb/men/75.jpg'
     },
     {
         id:'002',
@@ -20,7 +20,8 @@ let customers=[
         zip: "15071",
         phone: "4122235134",
         email: "jsmith@email.com",
-        anniversary_date: new Date('May 15, 2009, 12:00:00')
+        anniversary_date: new Date('May 15, 2009, 12:00:00'),
+        img: 'https://randomuser.me/api/portraits/thumb/men/73.jpg'
     },
     {
         id:'003',
@@ -31,7 +32,8 @@ let customers=[
         zip: "15209",
         phone: "4122125134",
         email: "janed@email.com",
-        anniversary_date: new Date('July 1, 2012, 12:00:00')
+        anniversary_date: new Date('July 1, 2012, 12:00:00'),
+        img: 'https://randomuser.me/api/portraits/thumb/women/75.jpg'
     }
 ]
 

@@ -1,0 +1,18 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn-update{
+    height: 90%;
+    grid-column: 2/ span 2;
+    margin-top: 9px;
+    border: none;
+    background-color: rgb(57, 48, 192);
+}
+
+.changes{
+    display: block;
+    width: 100%;
+    border-top: 1px solid;
+}
